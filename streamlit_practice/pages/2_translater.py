@@ -8,7 +8,7 @@ import streamlit as st
 st.set_page_config(page_title="Application", page_icon=":shark:")
 st.title("Translation Application")
 print("Redrow")
-source_language = ["English", "Japanese"]
+source_language = ["English", "Japanese", "Korea", "Chinese"]
 
 def translate(source: str, target: str, input: str) -> str:
     model = ChatOpenAI(model="gpt-4o-2024-05-13")
